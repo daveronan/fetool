@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="hvJbYi" name="FeatureExtractionTool" projectType="consoleapp"
+              version="1.0.0" bundleIdentifier="com.yourcompany.FeatureExtractionTool"
+              includeBinaryInAppConfig="1" jucerVersion="4.2.1">
+  <MAINGROUP id="UKgH5X" name="FeatureExtractionTool">
+    <GROUP id="{95DEE943-A3F3-BB07-A6D9-BD28F3B3CFDF}" name="Resource">
+      <FILE id="rkvdMy" name="initMFCCVariables.m" compile="1" resource="1"
+            file="Source/initMFCCVariables.m"/>
+    </GROUP>
+    <GROUP id="{75F04958-8221-F6FF-8175-F43562008D73}" name="Source">
+      <GROUP id="{C8F40467-E6B9-8552-9691-21C3FEE27017}" name="DataTypes">
+        <FILE id="TGPMEu" name="AudioFileData.cpp" compile="1" resource="0"
+              file="Source/AudioFileData.cpp"/>
+        <FILE id="hPgIIx" name="AudioFileData.h" compile="0" resource="0" file="Source/AudioFileData.h"/>
+        <FILE id="nrWA71" name="FeatureData.cpp" compile="1" resource="0" file="Source/FeatureData.cpp"/>
+        <FILE id="hp2EC7" name="FeatureData.h" compile="0" resource="0" file="Source/FeatureData.h"/>
+        <FILE id="WrDP5K" name="ObservationData.cpp" compile="1" resource="0"
+              file="Source/ObservationData.cpp"/>
+        <FILE id="Jas8SE" name="ObservationData.h" compile="0" resource="0"
+              file="Source/ObservationData.h"/>
+      </GROUP>
+      <GROUP id="{64E95522-500A-7F8C-ECB9-DAA52621A43F}" name="IO">
+        <FILE id="kDwlTn" name="XMLWrite.cpp" compile="1" resource="0" file="Source/XMLWrite.cpp"/>
+        <FILE id="qVKRz2" name="XMLWrite.h" compile="0" resource="0" file="Source/XMLWrite.h"/>
+        <FILE id="kMlqwn" name="WriteCSV.cpp" compile="1" resource="0" file="Source/WriteCSV.cpp"/>
+        <FILE id="rwxSuZ" name="WriteCSV.h" compile="0" resource="0" file="Source/WriteCSV.h"/>
+        <FILE id="U2IXgF" name="ParseCSV.cpp" compile="1" resource="0" file="Source/ParseCSV.cpp"/>
+        <FILE id="SOFRld" name="ParseCSV.h" compile="0" resource="0" file="Source/ParseCSV.h"/>
+        <FILE id="mm7NNj" name="AudioReader.cpp" compile="1" resource="0" file="Source/AudioReader.cpp"/>
+        <FILE id="V4aBIS" name="AudioReader.h" compile="0" resource="0" file="Source/AudioReader.h"/>
+      </GROUP>
+      <GROUP id="{73D0B8BA-664F-24A1-D1DE-9F157AB458E7}" name="Analysis">
+        <FILE id="FpmIPD" name="SpectralContrast.cpp" compile="1" resource="0"
+              file="Source/SpectralContrast.cpp"/>
+        <FILE id="f7YbDu" name="SpectralContrast.h" compile="0" resource="0"
+              file="Source/SpectralContrast.h"/>
+        <FILE id="GuHO7T" name="MFCC.cpp" compile="1" resource="0" file="Source/MFCC.cpp"/>
+        <FILE id="DStwU0" name="MFCC.h" compile="0" resource="0" file="Source/MFCC.h"/>
+        <FILE id="buHhF1" name="AudioSourceFeatureExtractor.cpp" compile="1"
+              resource="0" file="Source/AudioSourceFeatureExtractor.cpp"/>
+        <FILE id="B2mOUe" name="AudioSourceFeatureExtractor.h" compile="0"
+              resource="0" file="Source/AudioSourceFeatureExtractor.h"/>
+        <FILE id="iGNFqK" name="FFTW.h" compile="0" resource="0" file="Source/FFTW.h"/>
+        <FILE id="iRqxzM" name="FFTW.cpp" compile="1" resource="0" file="Source/FFTW.cpp"/>
+      </GROUP>
+      <FILE id="ZIJWWV" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       isDebug="1" optimisation="1" targetName="FeatureExtractionTool"/>
+        <CONFIGURATION name="Release" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       isDebug="0" optimisation="2" targetName="FeatureExtractionTool"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_video" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_opengl" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_graphics" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_events" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_data_structures" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_cryptography" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_core" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_formats" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_devices" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_basics" path="C:\SDKs\JUCE\modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <CODEBLOCKS targetFolder="Builds/CodeBlocks">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="FeatureExtractionTool"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="2" targetName="FeatureExtractionTool"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_video" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_opengl" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_graphics" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_events" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_data_structures" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_cryptography" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_core" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_formats" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_devices" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_basics" path="C:\SDKs\JUCE\modules"/>
+      </MODULEPATHS>
+    </CODEBLOCKS>
+    <VS2013 targetFolder="Builds/VisualStudio2013" externalLibraries="libfftw3-3.lib&#10;libfftw3f-3.lib&#10;libfftw3l-3.lib">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="FeatureExtractionTool"
+                       headerPath="C:\FFTW" libraryPath="C:\FFTW"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="3" targetName="FeatureExtractionTool"
+                       headerPath="C:\FFTW" libraryPath="C:\FFTW"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_video" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_opengl" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_graphics" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_events" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_data_structures" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_cryptography" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_core" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_formats" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_devices" path="C:\SDKs\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_basics" path="C:\SDKs\JUCE\modules"/>
+      </MODULEPATHS>
+    </VS2013>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULES id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_video" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
